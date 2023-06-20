@@ -1,0 +1,11 @@
+framework module CustomeFramework {
+  umbrella header "CustomeFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module CustomeFramework.Swift {
+  header "CustomeFramework-Swift.h"
+  requires objc
+}
